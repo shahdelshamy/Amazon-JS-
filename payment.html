@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Amazon</title>
+</head>
+<body>
+
+         <!-- Start Header -->
+    <div class="shahd">
+        <div class="container-amazon amazon-navbar rounded position-fixed d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="https://supersimple.dev/projects/amazon/images/amazon-logo-white.png" alt="">
+            </div>
+            <div class="amazon-search">
+                <input type="text" name="" id="search" class="p-2 rounded" placeholder="Type...">
+                <button type="button" class="p-2 btn btn-warning"  >search</button>
+            </div>
+            <div class="icon"><a href="payment.html" class="link-underline-opacity-0 link-warning"><i class="fa-solid fa-cart-shopping"></i></a></div>
+        </div>
+    </div>
+         <!-- End Header -->
+
+<div class="container-page d-flex justify-content-between pt-3">
+
+    <div class="ps-5 cardItems " >
+        <h3 class="ps-2">Preview Your Order:</h3>
+        <div class=" ps-2" id="contentCard"></div>
+    </div>
+
+    <div class="preview border border-warning rounded p-3 mt-5">
+        <h3>Order Summary:</h3>
+        <p id="items">Items : 0</p>
+        <p class="price">Total before tax:   $0.00</p>
+        <p class="tax">Estimated tax (10%)</p>
+        <hr>
+        <h4 class="text-danger totalPrice">Order total: $00.00</h4>
+        <label for="checkbox">Use PayPal</label>
+        <input type="checkbox" name="" id="checkbox">
+        <div class="paypal"></div>
+        <div class="text-center mt-3"><button type="button" class="ps-3 pe-3 btn-warning btn pay">Place Your Order</button></div>
+    </div>
+
+
+
+    </div>
+   
+
+   
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js.map"></script> -->
+    <script src="js/amazone.js" type="module"></script>
+    <script src="js/payment.js" type="module"></script>
+</body>
+</html>

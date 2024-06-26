@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Amazon</title>
+</head>
+<body>
+
+    <div class="new-account">
+        <div class="images text-center ">
+            <img class="object-fit-cover w-25 h-auto" src="img/vecteezy_amazon-logo-on-transparent-background_14018563.jpg" alt="">
+        </div>
+        <div class="login-contant rounded border border-success p-2 mb-2 border-opacity-25  me-auto ms-auto ">
+            <h3 class="text-center">Login</h3>
+            <form action="" class="myForm">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address:*</label>
+                    <input type="email" class="form-control" id="textNewAccount" placeholder="name@example.com">
+                </div>
+                  <label for="inputPassword5" class="form-label">Password:*</label>
+                  <input type="password" id="passwordNewAccount" class="form-control" aria-describedby="passwordHelpBlock">
+                  <div id="passwordHelpBlock" class="form-text mb-3">
+                    Your password must be 8-20 characters long.
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Phone Number:*</label>
+                    <input type="text" class="form-control" id="phone" placeholder="+20">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Your Age:*</label>
+                    <input type="text" class="form-control" id="age" maxlength="2">
+                </div>
+
+                <div class="submit text-center mt-3 mb-2">
+                    <a href="index.html"><button type="button" class="btn btn-warning">Back&#128072;</button></a>
+                    <input type="submit" value="Save" class="btn btn-warning save-data">
+                </div>
+
+                
+            </form>
+            
+        </div>
+    </div>
+ 
+      
+    <div class="popup ">
+        <div class="layer"></div>
+        <div class="popupContaint position-absolute text-center bg-light rounded pb-2">
+            <img src="img/check_mark_green_800_wht.jpg " alt="">
+            <h2>Thank You!</h2>
+            <p class="p-2 text-black-50">Your Details has been succesfully submitted.thanks!</p>
+            <button type="button" class="close btn btn-danger">OK</button>
+        </div>
+    </div>
+
+      
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js.map"></script> -->
+    <script src="js/newAccount.js"></script>
+</body>
+</html>

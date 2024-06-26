@@ -1,0 +1,144 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+:root{
+   --main-color:rgba(255, 157, 0, 0.97);
+}
+body{
+    height: 5000px;
+}
+/* Start Login Page */
+.login-contant{
+    width: fit-content;
+}
+.submit input,
+button[type="button"]{
+    background-color: var(--main-color);
+}
+.newAccount{
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+.new-account-p{
+    padding-left: 32%;
+}
+.new-account-p::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 42%;
+    width: 29%;
+    height: 2px;
+    background-color: rgb(0 0 0 / 33%);
+}
+.new-account-p::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 42%;
+    width: 22%;
+    height: 2px;
+    background-color: rgb(0 0 0 / 33%);
+}
+
+/* End Login Page */
+
+
+/* Start Popup */
+.popup{
+    display: none;
+}
+.open{
+    display: block;
+}
+.popup .layer{
+    width: 100%;
+    height: 100vh;
+    background-color: #00000042;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup .popupContaint {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.popup.open .popupContaint {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility:visible;
+}
+.popup .popupContaint img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+/* End Popup */
+
+/* Start Amazon Page */
+.shahd{
+    height: 95px;
+}
+.container-amazon{
+    padding: 20px;
+}
+.amazon-navbar{
+    width: 100%;
+    background-color: rgb(19, 25, 33);
+}
+.amazon-navbar .logo img{
+    width: 45%;
+    background-color: rgb(19, 25, 33);
+}
+.amazon-navbar .amazon-search {
+    width: 50%;
+}
+.amazon-navbar .amazon-search input{
+    width: 65%;
+    outline: none;
+}
+.amazon-navbar .icon{
+    color: orange;
+    font-size: 35px;
+}
+
+.content-items{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px, 1fr));
+    gap: 10px;
+    
+}
+/* End Amazon Page */
+
+/* Start Payment Page */
+.cardItems h3{
+    margin-top: 16px;
+}
+#contentCard{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(120px,300px));
+    gap: 10px;
+}
+.preview{
+    width: fit-content;
+    float: right;
+    margin-right: 20px;
+}
+.preview p{
+    font-size: 18px;
+}
+.preview input[type="checkbox"]{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+/* End Payment Page */
+
